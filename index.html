@@ -4,9 +4,226 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Dashboard</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Animate CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <h1>
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24" class="animate__animated animate__rubberBand animate__infinite">
+                        <path fill="currentColor" d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
+                    </svg>
+                    Dashboard
+                </h1>
+                <nav class="menu">
+                    <ul class="group1">
+                        <li><i class="fa-solid fa-house-chimney"></i>Home</li>
+                        <li><i class="fa-solid fa-address-card"></i>Profile</li>
+                        <li><i class="fa-solid fa-message"></i>Messages</li>
+                        <li><i class="fa-solid fa-clock-rotate-left"></i>History</li>
+                        <li><i class="fa-solid fa-list-check"></i>Tasks</li>
+                        <li><i class="fa-solid fa-people-group"></i>Communities</li>
+                    </ul>
+
+                    <ul class="group2">
+                        <li><i class="fa-solid fa-gear"></i>Settings</li>
+                        <li><i class="fa-solid fa-circle-question"></i>Support</li>
+                        <li><i class="fa-solid fa-shield"></i>Privacy</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header">
+                <div class="input-section">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="text" id="text-input">
+                </div>
+                <div class="grid-section1">
+                    <i class="fa-solid fa-bell"></i>
+                    <img src="https://www.pngitem.com/pimgs/m/537-5371026_butterfly-wings-colorful-girly-amazing-artistic-stars-and.png" alt="butterfly" class="img1">
+                    <p>Chantae</p>
+                </div>
+                <div class="grid-section2">
+                    <img src="https://www.pngitem.com/pimgs/m/537-5371026_butterfly-wings-colorful-girly-amazing-artistic-stars-and.png" alt="butterfly" class="img2">
+                    <div class="text">
+                        <p>Hi there,</p>
+                        <h2>Chantae (@taepal467)</h2>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="button" class="btn">New</button>
+                    <button type="button" class="btn">Upload</button>
+                    <button type="button" class="btn">Share</button>
+                </div>
+            </div>
+
+            
+            <div class="main-content">
+                <div class="subheader1">
+                    <h2 class="title">Your Projects</h2>
+                </div>
+
+                    <div class="item item1">
+                        <h3>Super Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore similique eveniet accusantium dicta velit iste, quis reprehenderit cupiditate, eius ipsa molestiae excepturi aut asperiores unde nisi voluptate tenetur ad.</p>
+                        <div class="svgs">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                            </svg>
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
+                            </svg>
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item item2">
+                        <h3>Less Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum blanditiis dignissimos, accusamus unde odio illum cupiditate accusantium repudiandae similique excepturi, placeat reprehenderit eos sunt aliquid nesciunt dolorem sint tempore.</p>
+                        <div class="svgs">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                            </svg>
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
+                            </svg>
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item item3">
+                        <h3>Impossible App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam inventore modi veniam eos consequatur nobis, ab vel tempore doloremque itaque pariatur quis, temporibus accusantium fugiat optio sed ex deleniti vero.</p>
+                        <div class="svgs">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                            </svg>
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
+                            </svg>
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item item4">
+                        <h3>Easy Peasy App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut commodi iure sit mollitia nobis amet, excepturi ea, fuga ex nulla ipsam inventore quisquam nihil! Praesentium et ut consectetur nulla.</p>
+                        <div class="svgs">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                            </svg>
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
+                            </svg>
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item item5">
+                        <h3>Ad Blocker</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, assumenda. Iure voluptatum alias odio velit quos blanditiis aliquid, reprehenderit voluptatem nam dolor quisquam unde exercitationem nisi quas tempore autem sint!</p>
+                        <div class="svgs">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                            </svg>
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
+                            </svg>
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="item item6">
+                        <h3>Money Maker</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptates ut iste eos, velit totam quae vel dolor porro accusantium? Nisi magni cum rerum, odio quisquam voluptatum! Dicta, quibusdam. Labore.</p>
+                        <div class="svgs">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                            </svg>
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
+                            </svg>
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M6,2A3,3 0 0,1 9,5C9,6.28 8.19,7.38 7.06,7.81C7.15,8.27 7.39,8.83 8,9.63C9,10.92 11,12.83 12,14.17C13,12.83 15,10.92 16,9.63C16.61,8.83 16.85,8.27 16.94,7.81C15.81,7.38 15,6.28 15,5A3,3 0 0,1 18,2A3,3 0 0,1 21,5C21,6.32 20.14,7.45 18.95,7.85C18.87,8.37 18.64,9 18,9.83C17,11.17 15,13.08 14,14.38C13.39,15.17 13.15,15.73 13.06,16.19C14.19,16.62 15,17.72 15,19A3,3 0 0,1 12,22A3,3 0 0,1 9,19C9,17.72 9.81,16.62 10.94,16.19C10.85,15.73 10.61,15.17 10,14.38C9,13.08 7,11.17 6,9.83C5.36,9 5.13,8.37 5.05,7.85C3.86,7.45 3,6.32 3,5A3,3 0 0,1 6,2M6,4A1,1 0 0,0 5,5A1,1 0 0,0 6,6A1,1 0 0,0 7,5A1,1 0 0,0 6,4M18,4A1,1 0 0,0 17,5A1,1 0 0,0 18,6A1,1 0 0,0 19,5A1,1 0 0,0 18,4M12,18A1,1 0 0,0 11,19A1,1 0 0,0 12,20A1,1 0 0,0 13,19A1,1 0 0,0 12,18Z" />
+                            </svg>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="side-content">
+                <div class="subheader2">
+                    <h2>Announcements</h2>
+                </div>
+                <div class="announcements">
+                    <div class="first-announcement">
+                         <h4>Site Maintenance</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis sunt in nostrum labore dolore dignissimos iure veniam fugiat itaque? Obcaecati excepturi totam ipsum vero expedita cumque maiores accusantium deleniti dolore.</p>
+                    </div>
+                    <hr>
+                    <div class="second-announcement">
+                        <h4>Community Share Day</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime magnam iusto dolor soluta, odio obcaecati nisi ex ad possimus, beatae voluptate minima minus et modi dolorum! Incidunt libero sit quo!</p>
+                    </div>
+                    <hr>
+                    <div class="third-announcement">
+                        <h4>Updated Privacy Policy</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem odit vero at labore ipsam id, consequatur est atque facere nam explicabo laboriosam. Sit quas libero, error voluptates explicabo facere.</p>
+                    </div>
+                </div>
+
+                <div class="subheader3">
+                    <h2>Trending</h2>
+                </div>
+                <div class="trending">
+                    <div class="first-trend">
+                        <img src="https://media.istockphoto.com/vectors/vector-illustration-of-cute-black-cat-vector-id1097490360?k=20&m=1097490360&s=612x612&w=0&h=fkOKJYWMLOr_7nMMi7TBNdWhsjrBnoAw0XwGD4ltCnw=" alt="black cat">
+                        <div class="info">
+                            <h4>@tegan</h4>
+                            <p>world peace builder</p>
+                        </div>
+                    </div>
+                    <div class="second-trend">
+                        <img src="https://www.pngitem.com/pimgs/m/537-5371026_butterfly-wings-colorful-girly-amazing-artistic-stars-and.png" alt="butterfly" class="img1">
+                        <div class="info">
+                            <h4>@taepal467</h4>
+                            <p>super cool project</p>
+                        </div>
+                    </div>
+                    <div class="third-trend">
+                        <img src="https://toppng.com/uploads/preview/cute-turtle-clipart-back-to-school-turtle-11563428819egjqpbrhux.png" alt="turtle">
+                        <div class="info">
+                            <h4>@kendall</h4>
+                            <p>life changing app</p>
+                        </div>
+                    </div>
+                    <div class="fourth-trend">
+                        <img src="https://www.clipartmax.com/png/middle/58-589724_finding-nemo-marlin-pixar-clip-art-build-your-own-nemo.png" alt="Nemo">
+                        <div class="info">
+                            <h4>@alex</h4>
+                            <p>no traffic maker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     
+      <!-- Font Awesome -->
+      <script src="https://kit.fontawesome.com/fc83ccfc39.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
